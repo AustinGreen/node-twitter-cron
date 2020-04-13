@@ -4,10 +4,8 @@ let begin = require("@architect/functions"); // Reads & writes session data
 exports.handler = async function http(request) {
   let followers = await data.get({
     table: "followers",
-    key: "followers",
   });
-
   return {
-    body: JSON.stringify(followers),
+    body: JSON.stringify(followers[0].followers),
   };
 };
