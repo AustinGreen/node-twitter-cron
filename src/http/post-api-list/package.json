@@ -1,0 +1,16 @@
+{
+  "name": "post-api-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Austin Green",
+  "license": "ISC",
+  "dependencies": {
+    "@architect/functions": "^3.8.1",
+    "@begin/data": "^1.2.1"
+  }
+}

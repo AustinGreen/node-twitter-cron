@@ -8,5 +8,9 @@
   "devDependencies": {
     "@architect/sandbox": "latest",
     "cross-env": "^7.0.2"
+  },
+  "dependencies": {
+    "@architect/functions": "^3.8.1",
+    "@begin/data": "^1.2.1"
   }
 }
