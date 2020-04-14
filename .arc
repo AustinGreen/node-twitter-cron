@@ -2,8 +2,9 @@
 begin-app
 
 @http
-get /api/list
-post /api/list
+get /api/followers
+get /api/unfollowers
+post /api/followers
 
 @scheduled
 get-diff cron(0/15 * * * *)
