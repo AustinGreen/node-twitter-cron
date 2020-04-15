@@ -1,16 +1,14 @@
 {
-  "name": "get-api-list",
+  "name": "put-api-unfollowers",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Austin Green",
-  "license": "ISC",
-  "dependencies": {
-    "@architect/functions": "^3.8.1",
-    "@begin/data": "^1.2.1"
-  }
+  "license": "ISC"
 }

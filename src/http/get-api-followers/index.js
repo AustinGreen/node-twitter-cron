@@ -1,6 +1,8 @@
 let data = require('@begin/data');
+let arc = require('@architect/functions');
+let auth = require('@architect/shared/auth');
 
-exports.handler = async function http(request) {
+async function read(request) {
   let followers = await data.get({
     table: 'data',
     key: 'followers',
@@ -8,4 +10,6 @@ exports.handler = async function http(request) {
   return {
     body: JSON.stringify(followers ? followers.items : []),
   };
-};
+}
+
+exports.handler = arc.http.async(auth, read);

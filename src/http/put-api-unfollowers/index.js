@@ -1,5 +1,9 @@
 const updateUnfollowers = require('@architect/shared/updateUnfollowers');
+let auth = require('@architect/shared/auth');
+let arc = require('@architect/functions');
 
-exports.handler = async function http(req) {
+async function write() {
   return updateUnfollowers();
-};
+}
+
+exports.handler = arc.http.async(auth, write);
