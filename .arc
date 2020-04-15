@@ -5,6 +5,7 @@ begin-app
 get /api/followers
 get /api/unfollowers
 post /api/followers
+put /api/unfollowers
 
 @scheduled
 get-diff cron(0/15 * * * *)

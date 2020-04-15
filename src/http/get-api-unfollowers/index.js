@@ -6,6 +6,6 @@ exports.handler = async function http(request) {
     key: 'unfollowers',
   });
   return {
-    body: JSON.stringify(unfollowers.items),
+    body: JSON.stringify(unfollowers ? unfollowers.items : []),
   };
 };

@@ -1,8 +1,8 @@
 {
-  "name": "get-api-list",
+  "name": "shared",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "updateUnfollowers.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,7 @@
   "author": "Austin Green",
   "license": "ISC",
   "dependencies": {
-    "@begin/data": "^1.2.1"
+    "@begin/data": "^1.2.1",
+    "twit": "^2.2.11"
   }
 }
