@@ -1,5 +1,5 @@
 let data = require('@begin/data');
-let Twit = require('Twit');
+let Twit = require('twit');
 
 const getFollowerIds = async () => {
   const T = new Twit({
